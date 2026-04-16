@@ -4,7 +4,7 @@ services:
     container_name: mirofish-offline
     env_file:
       - .env
-   ports:
+    ports:
       - "3002:3000"
       - "5002:5001"
     restart: unless-stopped
@@ -32,4 +32,3 @@ services:
 volumes:
   neo4j_data:
   neo4j_logs:
-
