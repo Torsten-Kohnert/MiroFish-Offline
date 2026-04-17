@@ -1290,7 +1290,7 @@ class ReportAgent:
         
         # ReACT loop
         tool_calls_count = 0
-        max_iterations = 5  # Maximum iterations
+        max_iterations = 10  # Maximum iterations (increased from 5 for deeper research)
         min_tool_calls = 3  # Minimum tool calls
         conflict_retries = 0  # Consecutive conflicts where tool calls and Final Answer appear simultaneously
         used_tools = set()  # Record tool names already called
